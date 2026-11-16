@@ -20,6 +20,9 @@ def show_tasks():
 
 def complete_task(number):
     """Mark a task as done."""
+    if number < 1 or number > len(tasks):
+        print("Invalid task number.")
+        return
     tasks[number - 1]["done"] = True
 
 
