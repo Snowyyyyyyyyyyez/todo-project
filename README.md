@@ -8,4 +8,4 @@ Run `python todo.py` and choose an option from the menu.
 
 ## Status
 
-Version: in development
+Version: 0.1.0 (stable)
