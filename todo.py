@@ -20,6 +20,9 @@ def show_tasks():
 
 def complete_task(number):
     """Mark a task as done."""
+    if number < 1 or number > len(tasks):
+        print("Invalid task number.")
+        return
     tasks[number - 1]["done"] = True
 
 
@@ -32,7 +35,10 @@ def main():
         elif choice == "2":
             show_tasks()
         elif choice == "3":
-            complete_task(int(input("Task number: ")))
+            try:
+                complete_task(int(input("Task number: ")))
+            except ValueError:
+                print("Please enter a number.")
         elif choice == "4":
             break
 
