@@ -16,4 +16,4 @@ Task: Finish homework
 
 ## Status
 
-Version: in development
+Version: 0.1.0 release candidate
