@@ -35,7 +35,10 @@ def main():
         elif choice == "2":
             show_tasks()
         elif choice == "3":
-            complete_task(int(input("Task number: ")))
+            try:
+                complete_task(int(input("Task number: ")))
+            except ValueError:
+                print("Please enter a number.")
         elif choice == "4":
             break
 
